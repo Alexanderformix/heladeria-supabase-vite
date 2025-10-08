@@ -1,0 +1,74 @@
+/* Fondo general */
+body {
+  background: linear-gradient(180deg, #f8f9fa, #e3f2fd);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  border-radius: 12px;
+}
+
+.navbar-brand span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Títulos */
+h1, h2, h5 {
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Botones */
+.btn {
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Tablas */
+.table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #0d6efd;
+  color: white;
+  border-radius: 10px;
+}
