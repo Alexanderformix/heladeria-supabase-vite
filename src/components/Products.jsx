@@ -6,7 +6,7 @@ export default function Products({ session, userProfile }) {
   const [loading, setLoading] = useState(true)
   const [mostRentable, setMostRentable] = useState(null)
 
-  // ✅ Mapa de imágenes (sin "public/")
+  // ✅ Mapa de imágenes 
   const productImages = {
     "Malteada de Chocolate": "/img/chocolate.jpg",
     "Copa de Fresa": "/img/fresa.jpg",

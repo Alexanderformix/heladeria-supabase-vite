@@ -14,10 +14,10 @@ export default function Login() {
       const { error } = await supabase.auth.signInWithPassword({ email, password })
       if (error) setMsg(error.message)
     } else {
-      // register: create auth user then insert profile into users table
+      // Registrarse: crear un usuario autorizado y luego insertar el perfil en la tabla de usuarios
       const { data, error } = await supabase.auth.signUp({ email, password })
       if (error) { setMsg(error.message); return }
-      // after signUp, create users row manually (you might want to implement server-side safe flow)
+      // Después de registrarse, cree una fila de usuarios manualmente (es posible que desee implementar un flujo seguro del lado del servidor)
       const { error: err2 } = await supabase.from('users').insert([{ nombre: email, correo: email, password: password, rol: 'cliente' }])
       if (err2) setMsg(err2.message)
       else setMsg('Cuenta creada. Revisa tu email si Supabase pide confirmación.')
